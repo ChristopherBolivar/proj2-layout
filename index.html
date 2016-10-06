@@ -10,12 +10,13 @@
 
 <body>
        <header id="header">
-           <div id="logo">
+           <div class="logo">
                <h1>Christopher Bolivar</h1>
            </div>
-           <nav>
+           <nav class="nav">
                <ul>
                    <li><a href="index.html">Home</a></li>
+                   <li><a href="#experience">Experience</a></li>
                    <li><a href="#portfolio">Portfolio</a></li>
                    <li><a href="#contact">Contact</a></li>
                </ul>
@@ -23,16 +24,40 @@
        </header>
        <main id="about">
            
-           <div id="profile-pic">
+           <div class="profile-pic">
                <img src="img/responsive-layout-profile.png" alt="Picture of Christopher Bolivar"/>
            </div>
-           <div id="intro-message">
+           <div class="intro-message">
                <p>
                    Hi! I'm a front-end developer who loves  responsive design and css. I recently finised learing front-end web development at Treehouse and am excited to put all my skills to use!
                </p>
            </div>
        </main><!--EndAbout-->
+       <section id="experience">
+       <h3>Graphic and Web Design</h3>
+          <p>As a Web Designer by trade, I create very clean and functional websites with a strong online presence.</p>
+          <p>My skill set include but not limited to:</p>
        
+           <div class="exp-list">
+                <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>Bootstrap</li>
+        </ul>
+            <ul>
+                
+          <li>Wordpress</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe InDesign</li>
+          <li>Adobe Illustrator</li>
+        </ul>
+          </div>
+       
+        <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+    
+    </section>
        
        
        
@@ -41,45 +66,83 @@
            
            
            
-              <div id="tags">
-            <div id="marketing">
+              <div class="tags">
+            <div class="marketing">
                    <img src="img/portfolio-1.png" alt="Picture of Marketing page">
                    <h2>Marketing Page</h2>
                    <p>This project shows the front page of a marketing website meant for a
                       specific business I'm interested in.
                    </p>
                </div>
-               <div id="searchPage" >
+               <div class="searchPage" >
                    <img src="img/portfolio-2.png" alt="Picture of search page">
                    <h2>Search Page</h2>
                    <p>This project searches through a specific datage to find information tat user is trying to look up.
                    </p>
                </div>
-                <div id="travelApp">
+                <div class="travelApp">
                    <img src="img/portfolio-3.png" alt="Picture of travel app page">
                    <h2>Travel App</h2>
                    <p>This project compares travel times based on transportation methods and tells you the best one.
                    </p>
                </div>
-               <div id="spotMap">
+               <div class="spotMap">
                    <img src="img/portfolio-6.png" alt="Picture of Map page">
                    <h2>Map of Favorite Spots</h2>
                    <p>This project uses mapping APIs to plot points for my favorite spots in the city for a do-it-yourself walking tour.
                    </p>
                </div>
-               <div id="photoGallery">
+               <div class="photoGallery">
                    <img src="img/portfolio-5.png" alt="Picture of Marketing page">
                    <h2>Photo Galery</h2>
                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos
                    </p>
                </div>
-               <div id="calculator" >
+               <div class="calculator" >
                    <img src="img/portfolio-4.png" alt="Picture of calculator page">
                    <h2>Calculator</h2>
                    <p>Someone can enter in the numbers, and push the big blue button and get the result.
                    </p>
                </div>
+                  <div class="webSearch">
+                   <img src="img/portfolio-11.png" alt="Picture of Web Search page">
+                   <h2>Web Search</h2>
+                   <p>This project allows you to search a webpage based on keywords the user types in.
+                   </p>
+               </div>
+               <div class="contactForm">
+                   <img src="img/portfolio-12.png" alt="Picture of contact form page">
+                   <h2>Contact Form</h2>
+                   <p>This project is a HTML &AMP; PHP contact form. Collects the user's input and the informations gets automatically sent with a PHP method.
+                   </p>
+               </div>
+                  <div class="stickyNote" >
+                   <img src="img/portfolio-14.png" alt="Picture of stickynote page">
+                   <h2>StickyNote</h2>
+                   <p>This is project a JavaScripts proect placing sticky notes in an admin area of a page.
+                   </p>
+               </div>
+               <div class="vidPlayer" >
+                   <img src="img/portfolio-7.png" alt="Picture of video player page">
+                   <h2>Video Player</h2>
+                   <p>This project showcases this interactive movie player.
+                   </p>
+               </div>
+                   <div class="vidGallery">
+                   <img src="img/portfolio-8.png" alt="Picture of Video Gallery page">
+                   <h2>Responsive Video Gallery</h2>
+                   <p>This project shows a fully responsive video gallery layout.
+                   </p>
+               </div>
+               <div class="music">
+                   <img src="img/portfolio-10.png" alt="Picture of Music player page">
+                   <h2>Music Player</h2>
+                   <p>This project is a interactive music player.
+                   </p>
+               </div>
+               
            </div>
+           
                
            
        </section><!--EndPortfolio-->
@@ -95,7 +158,15 @@
            <hr>
        <footer>
            <p>Christopher Bolivar</p>
-           <a href="#header"><p>back to top</p></a>
+           <nav class="nav hidden-sm">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="#experience">Experience</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#contact">Contact</a></li>
+               </ul>
+           </nav>
+           <a class="nav hidden-lg" href="#header"><p>back to top</p></a>
        </footer>
     
 </body>

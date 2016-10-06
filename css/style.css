@@ -4,10 +4,10 @@ a, a:visited {
     color: inherit;
 }
 p {padding: .5rem 1.2rem;}
-header, p, #about, #portfolio, #contact{
+header, p, #about, #portfolio, #contact, #experience{
     text-align: center;
 }
-h3, nav ul li, footer p:last-child {
+h3, .nav  {
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -20,14 +20,14 @@ body {
     
 }
 
-footer , nav ul{
+footer , .nav ul, .exp-list{
     display: flex;
     justify-content: space-around;
 }
-nav ul {
+.nav ul {
     flex-direction: column;
     width: 80%;}
-nav ul li {
+.nav ul li {
     background: #fff;
     list-style: none;
     width: 90%;
@@ -38,47 +38,59 @@ nav ul li {
 section, main {
     padding: 1.5rem 0;
 }
-#tags h2 {font-weight: 400;}
+#experience,header,footer {background-color: #f6f6f6;}
+.exp-list ul li {text-align: left;}
+#about {background-color: #ccc;}
+.tags h2 {font-weight: 400;}
 #portfolio {background: #fff;}
-#portfolio div img, #profile-pic img {width: 100%}
+#portfolio div img, .profile-pic img {width: 100%}
 
-
+.hidden-sm {display: none;}
 @media screen and (min-width: 768px) {
+    .hidden-lg {display: none;}
+    .hidden-sm {display: inline-block;}
     hr {margin: 0 1.5rem;}
-    nav ul {
+    .nav ul {
         flex-direction: row;
         justify-content: center;
         width: auto;
     }
-    nav ul li {
+    .nav ul li {
         background: none;
         width: inherit;
         padding: 0 1rem;
         margin: 0;
     }
     #about {text-align: left;}
-    #tags, #about {
+    .tags, #about {
         display: flex;
         justify-content: space-around;
     }
-    #intro-message {
+    .intro-message {
         order: -1;
         width: 50%;
+        padding: .5rem;
         
     }
-    #intro-message p {
+    .intro-message p {
         text-align: left;
         padding:  .5rem 0;
         font-size: 1.2rem;
     }
-    #profile-pic {flex-grow: 2;}
-    #tags {
+    .profile-pic {flex-grow: 2;}
+    .exp-list {padding: 0 15rem;}
+    .tags {
         
         flex-wrap: wrap;
     }
-    #tags div {
+    .tags div {
         flex: 1 45%;
         margin: 1rem .5rem;
+        transition: .2s ease;
+    }
+    .tags div:hover {
+        border-bottom: 3px solid red;
+        transform:  scale(1.1);
     }
     #contact p {
         padding: 0 4rem;
@@ -90,17 +102,19 @@ section, main {
         display: flex;
         justify-content: space-around;
     }
-    header nav {align-self: center;}
+    header .nav {align-self: center;}
     #about {justify-content: space-around;}
-    #intro-message {
+    .intro-message {
         flex-grow: 2;
     }
-    #intro-message p {
+    .intro-message p {
         padding: 0 8rem;
     }
     
-    #profile-pic img {width: inherit;}
-    #tags div {
+    .profile-pic img {width: inherit;}
+    
+    .exp-list {padding: 0 25rem;}
+    .tags div {
         flex: 1 25%;
         margin: 1rem .5rem;
     }
